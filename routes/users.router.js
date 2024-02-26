@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
     }));
     return res.json(retusers);
   } catch (error) {
-    // 에러 처리
     return res.status(500).json({ message: '서버 에러' });
   }
 });
